@@ -9,6 +9,13 @@ class ItemsController < ApplicationController
                                   :response_group => 'Medium' , 
                                   :country => 'jp')
       @amazon_items = response.items
+      #binding.pry
+      #@amazon_items.title        = amazon_items.get('ItemAttributes/Title')
+      #@amazon_items.small_image  = amazon_items.get("SmallImage/URL")
+      #@amazon_items.medium_image = amazon_items.get("MediumImage/URL")
+      #@amazon_items.large_image  = amazon_items.get("LargeImage/URL")
+      #@amazon_items.detail_page_url = amazon_items.get("DetailPageURL")
+      #@amazon_items.raw_info        = amazon_items.get_hash
     end
   end
 
